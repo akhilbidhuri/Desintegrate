@@ -26,8 +26,8 @@ const gallery="<script>var script = document.createElement('script');"+
 "document.getElementsByTagName('head')[0].appendChild(script);"+
 "var div = document.createElement('div');"+
 "var in = ''"+
-"$.post('http://10.2.41.166:4000/projects',{pid:"+this.props.data.projects[0][0]._id+
-"}).then(res=>{for(var i=0;i<res.data.projects[0][0].themes.length;i++){in=in+'<img style='height:200px;width:200px' src='res.data.projects[0][0].themes[i]'/>'}}})"
+"$.post('http://10.2.41.166:4000/projects',{pid:"+//this.props.data.projects[0][0]._id+
+"}).then(res=>{for(var i=0;i<res.data.projects[0][0].themes.length;i++){in=in+'<img style='height:200px;width:200px' src='res.data.projects[0][0].themes[i]'/>'}}})"+
 "div.innerHTML=in"+
 +"</script>"
 
